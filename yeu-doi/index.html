@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hộp Quà Yêu Đời</title>
+<meta property="og:title" content="Hộp Quà Yêu Đời">
+<meta property="og:description" content="Cá Mập gửi tặng">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{--bg:#eef3f1;--ink:#1d2f2a;--paper:#fffdf8;--line:#d6e0dc;--accent:#2f7a63;--gift:#c8504a;--ribbon:#e9b949;
+  --serif:"Noto Serif",Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.75;
+  min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 16px}
+.letter{background:var(--paper);border:1px solid var(--line);border-radius:10px;max-width:560px;width:100%;
+  padding:40px 30px 30px;display:flex;flex-direction:column;gap:18px;box-shadow:0 18px 40px -24px rgba(29,47,42,.45);
+  position:relative;animation:rise 1s ease both}
+.letter::before{content:"";position:absolute;left:50%;top:-1px;width:40px;margin-left:-20px;height:18px;background:var(--ribbon);border-radius:0 0 6px 6px}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+h1{font-weight:600;font-size:clamp(1.55rem,5.6vw,2.05rem);line-height:1.3;margin:0;color:var(--gift)}
+p{margin:0}
+.last{font-style:italic;color:var(--accent);border-top:1px solid var(--line);padding-top:18px}
+.sign{font-style:italic;color:var(--gift);text-align:right;font-size:1.05rem}
+@media (max-width:420px){.letter{padding:32px 20px 24px}}
+@media (prefers-reduced-motion:reduce){.letter{animation:none}}
+</style>
+</head>
+<body>
+<article class="letter">
+  <h1>Yêu đời không phải là chờ đời dễ thương</h1>
+  <p>Mặt trời không mọc vì ta xứng đáng. Nó cứ mọc, mỗi sáng, như một món quà không ghi tên người gửi. Điều duy nhất nó cần ở ta là mở mắt ra mà nhận.</p>
+  <p>Niềm vui thật hiếm khi đến từ việc có thêm điều gì. Nó đến vào lúc ta thôi đòi khoảnh khắc này phải khác đi, và nhìn cho kỹ những gì đang có trước mặt.</p>
+  <p>Nỗi buồn cũng không phải kẻ thù của niềm vui. Nó là đất được cày lên, để hạt vui có chỗ bén rễ. Người từng buồn sâu mới biết vui cho trọn.</p>
+  <p>Vậy nên yêu đời là chọn ở lại với cuộc sống, ngay cả khi nó chưa như ý, và vẫn tìm ra một lý do để mỉm cười. Lý do ấy thường rất nhỏ: một ly trà còn ấm, một người còn nhớ tên ta, một buổi chiều chưa vội tắt.</p>
+  <p class="last">Hôm nay chỉ cần một điều: sống chậm đủ để thấy mình đang sống.</p>
+  <div class="sign">Cá Mập gửi tặng</div>
+</article>
+</body>
+</html>
